@@ -1,4 +1,4 @@
-## Извинения за временный казус
+# Извинения за временный казус
 
 **Васильченко Мария Михайловна**  
 **Москва, Институт РТУ МИРЭА**  
@@ -22,6 +22,10 @@
 - **Взаимодействие с данными**: Работа с REST API для обработки данных на сервере и клиенте, а также использование Supabase для управления базой данных.
 
 ## Работа в Postgres
+
+### Создание таблиц
+
+```sql
 -- Создание таблицы пользователей
 CREATE TABLE public.users (
     id SERIAL PRIMARY KEY,
@@ -65,6 +69,11 @@ CREATE TABLE public.cart (
     added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE (user_id, product_id)
 );
+```
+
+### Вставка данных
+
+```sql
 INSERT INTO public.products (image_path, title, description, price, additional_images, format, publisher, chapters) VALUES
 (
     'https://sun1-25.userapi.com/impg/DOnyhuU_QBsca35XAr-n_gPNnN-mxrMXwU862w/s7mcCbHbKa4.jpg?size=632x1000&quality=95&sign=e6e3545030659d40332278d2e9cd74a2&type=album',
@@ -146,12 +155,9 @@ INSERT INTO public.products (image_path, title, description, price, additional_i
     'Терлецки комикс',
     '№ глав: 265-300'
 );
+```
 
-![{A454D51F-0F58-4D86-961F-2BEAED814A1D}](https://github.com/user-attachments/assets/4cb33b91-6361-4408-8499-5d52c0e2fc04)
-
----
-
-**Извинения за временный казус**
+## Извинения за временный казус
 
 Уважаемые преподаватели и коллеги,
 
